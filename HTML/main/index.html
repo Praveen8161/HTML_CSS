@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praveen's Webpage</title>
     <link rel="icon" href="Pickachu.jpg" type="image/x-icon">
+    
     <style>
+        body{
+            background-color: grey;
+            color: aliceblue;
+        }
         table{
             border-collapse: collapse;
             width: 50px;
@@ -20,25 +25,28 @@
 
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="#heading-tags">Heading Tags</a></li>
-            <li><a href="#ul">Unordered List</a></li>
-            <li><a href="#ol">Ordered List</a></li>
-            <li><a href="#dl">Description List</a></li>
-            <li><a href="#div&Others">Div and Others</a></li>
-            <li><a href="#inline">inline Elements and Block Elements</a></li>
-            <li><a href="#sematic">Sematic tags</a></li>
-            <li><a href="#form">Form Elements</a></li>
-            <li><a href="#table">Table Elements</a></li>
-            <li><a href="#linkAndImages">Link and Images</a></li>
-            <li><a href="#figure">Figure Elements</a></li>
-            <li><a href="#input">Input Elements</a></li>
-            <li><a href="#datalist">Data List Elements</a></li>
-            <li><a href="#select">Select Elements</a></li>
-            <li><a href="#Others">Others</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li><a href="#heading-tags">Heading Tags</a></li>
+                <li><a href="#ul">Unordered List</a></li>
+                <li><a href="#ol">Ordered List</a></li>
+                <li><a href="#dl">Description List</a></li>
+                <li><a href="#div&Others">Div and Others</a></li>
+                <li><a href="#inline">inline Elements and Block Elements</a></li>
+                <li><a href="#sematic">Sematic tags</a></li>
+                <li><a href="#form">Form Elements</a></li>
+                <li><a href="#table">Table Elements</a></li>
+                <li><a href="#linkAndImages">Link and Images</a></li>
+                <li><a href="#figure">Figure Elements</a></li>
+                <li><a href="#input">Input Elements</a></li>
+                <li><a href="#datalist">Data List Elements</a></li>
+                <li><a href="#select">Select Elements</a></li>
+                <li><a href="#Others">Others</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
     <section id="heading-tags">
         <!--Headings-->
         <h1>First heading</h1>
@@ -71,6 +79,13 @@
         <li>pinapple</li>
     </ol>
     <hr>
+    <aside>
+        <p>For Folding line</p>
+        <details>
+            <summary>do you know when will I <mark>woke up</mark> </summary>         
+            <p>it's around <time datetime="06.00">6'O clock</time></p>
+        </details>
+    </aside>
     </section>
     <section id="dl">
         <!-- Description List -->
@@ -178,6 +193,7 @@
     <section id="table">
         <h3>Table</h3>
         <table>
+            <caption>Training Table</caption>
             <thead>
                 <tr>
                     <th>SI.No</th>
@@ -212,6 +228,11 @@
                     <td>27</td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4"> Eat,Sleep and Code</td>
+                </tr>
+            </tfoot>
         </table>
         <hr>
     </section>
@@ -230,10 +251,10 @@
             width="300">
     
             <h3>Images from local computer same directory</h3>
-            <img src="Pickachu.jpg" alt="Pikachu" width="200">
+            <img src="./images/Pickachu.jpg" alt="Pikachu" width="200">
     
             <h3>Image from local computer different directory but not so diffrent</h3>
-            <img src="./excersise/Panda.png" alt="Panda" width="200" loading="lazy">
+            <img src="./images/Panda.png" alt="Panda" width="200" loading="lazy">
         <hr>
     </section>
     <section id="figure">
@@ -293,13 +314,19 @@
     </section>
     <section id="select">
         <h3>Select</h3>
-        <label>Fruit Option</label>
-        <select>
-            <option>Select from list</option>
-            <option disabled>Apple</option>
-            <option>Orange</option>
-            <option selected>Banana</option>
-            <option>Grape</option>
+        <label for="content">Fruit Option</label>
+        <select name="content" id="content" multiple size="3">
+            <optgroup label="seasonal fruits">
+                <option value="starwberry">Strawberry</option>
+                <option value="apple" disabled>Apple</option>
+                <option value="orange">Orange</option>
+                <option value="banana" selected>Banana</option>
+            </optgroup>
+            <optgroup label="non-seasonal fruits">
+                <option value="grape">Grape</option>
+                <option value="koyya">Koyya</option>
+                <option value="palapalam">Palapalam</option>
+            </optgroup>
     </select>
 
         <br><br>
@@ -323,6 +350,33 @@
         <!-- br*15 -->
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </section>
+    <article id="contact">
+        <h3>Contact me:</h3>
+        <p>I like to hear from you</p>
+        <form action="https:httpbin.org/get" method="get" target="_blank">
+            <p>
+                <label for="user-name">Name:</label>
+                <input type="text" name="user-name" id="user-name" placeholder="enter name" autocomplete="on" required autofocus value="Balachandren">
+            </p>
+            <p>
+                <label for="phone">Enter Phone Number</label>
+                <input type="tel" name="phone" id="phone" placeholder="Phone Number" required pattern="[0-9]{10}" value="8745659845">
+            </p>
+            <p>
+                <label for="decade">Select Decade</label>
+                <input type="number" name="decade" id="decade" min="1990" max="2020" step="1" value="2020" required>
+            </p>
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+            <p>
+                <button type="reset">Reset</button>
+            </p>
+            <p>
+                <button type="submit" formaction="https:httpbin.org/post" formmethod="post">Post</button>
+            </p>
+        </form>
+    </article>
 
 </body>
 </html>

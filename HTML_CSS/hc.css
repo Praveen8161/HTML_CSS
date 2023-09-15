@@ -64,7 +64,7 @@ class and id can be in same element  */
 #gre{
     color: green;
     font-style: normal;
-    text-decoration: none !important;
+    text-decoration: none;
     border: none;
 }
 
@@ -73,7 +73,7 @@ class and id can be in same element  */
 
 }
 .container a{
-    background-color: blue !important;
+    background-color: lightblue !important;
 
 }
 
@@ -114,4 +114,8 @@ class and id can be in same element  */
     padding: 5px;
     width: 70px;
     height: 20px;
+}
+
+.one{
+    color: red !important;
 }
