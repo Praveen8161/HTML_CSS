@@ -1,0 +1,117 @@
+/* div{
+    color: blueviolet;
+} */
+/* list property */
+ul{
+    list-style-type: none;
+}
+/* Font Property */
+p{
+    font-size: 12px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 60;
+}
+/* Text Property */
+p{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    line-height: 5;
+    letter-spacing: 4px;
+}
+/* border property */
+p{
+    /* border: border-width,border-style,border=color */
+    border: 10px solid red;
+}
+
+/* div{
+    border-top: 5px solid green;
+    border-bottom: 2px dashed black;
+    border-radius: 5px;
+    border-left: 4px dotted red;
+    border-right: 5px double red;
+} */
+
+
+/* class selector - class can have more than one element
+selector */
+.ele{
+    text-align: center;
+    color: darkslategray;
+}
+.brd{
+    border: 2px;
+    border-radius: 3px;
+    background-color: lightcoral;
+}
+
+/* id */
+/* one element can use only one id 
+class and id can be in same element  */
+
+#eleId{
+    text-align: end;
+    color: darkorchid;
+}
+/* --------------------------------------------------------------------- */
+
+.brw{
+    color: brown;
+    font-style: italic;
+}
+
+#gre{
+    color: green;
+    font-style: normal;
+    text-decoration: none !important;
+    border: none;
+}
+
+.container{
+    background-color: yellow;
+
+}
+.container a{
+    background-color: blue !important;
+
+}
+
+#bottomCon a{
+    background-color:aqua ;
+    color: black;
+}
+/* --------------------------------------------------------------------------------- */
+/* converting Inline to Block Elements */
+.inline{
+    /* Displaying inline ele as Block */
+    display: block; 
+    background-color: red;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    width: 70px;
+    height: 20px;
+}
+
+.block{
+    /* Displaying Block ele as Inline but cannot use width and height*/
+    display: inline; 
+    background-color: red;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    /* width: 70px;
+    height: 20px; */
+}
+
+.inline-block{
+    /* Displaying BLock ele as Inline-Block and can use width and height*/
+    display: inline-block; 
+    background-color: red;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    width: 70px;
+    height: 20px;
+}
