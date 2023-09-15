@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Panda.png" type="image/x-icon">
+    <title>HTML excersise</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 40%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 7px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p><b>Create an element that helps you to open the <a href="https://google.com" target="_blank">google</a> in separate new tab.</b></p>
+    </div>
+
+    <div>
+        <p><b>In the form, add two radio buttons with grouping them for employee type(Salaried and own business)</b></p>
+        <input type="radio" name="income"> Salaried
+        <input type="radio" name="income"> own business
+    </div>
+
+    <div>
+        <p><b>Use the table tag to design given <a href="https://www.bapugraphics.com/assets/img/port_upload_dir/table-4.jpg" target="_blank">image</a></b></p>
+
+        <table >
+            <thead>
+                <tr>
+                    <th colspan="4">Health Chart</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">State of Health</th>
+                    <th colspan="2">Fasting Value</th>
+                    <th>After Eating</th>
+                </tr>
+                <tr>
+                    <th>Minumum</th>
+                    <th>Maximum</th>
+                    <th>2 hours after eating</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Healthy</td>
+                    <td>70</td>
+                    <td>100</td>
+                    <td>Less than 140</td>
+                </tr>
+                <tr>
+                    <td>Pre-Diabetes</td>
+                    <td>101</td>
+                    <td>126</td>
+                    <td>140 to 200</td>
+                </tr>
+                <tr>
+                    <td>Diabetes</td>
+                    <td>More than 126</td>
+                    <td>N\A</td>
+                    <td>More than 200</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <p><b>In your, HTML page add the below line and Highlight it without using any CSS</b></p>
+        <span> <mark>"HTML & CSS is awesome"</mark> </span>
+    </div>
+
+    <div>
+        <p><b>Write HTML input tags snippet to show default values for all Form elements.</b></p>
+
+        <form>
+            <fieldset>
+                <legend><b>Form Data</b></legend>
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" value="Ashock Mithran"> <br>
+        
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" value="mithran@gmail.com"> <br>
+        
+                <label><b>Select your gender</b></label><br>
+                <input type="radio" name="gender" id="gender_male" checked>Male <br>
+                <input type="radio" name="gender" id="gender_female"> Female <br>
+        
+                <label><b>Select the fruits</b></label> <br>
+                <input type="checkbox" name="fruits" id="apple" checked> Apple <br>
+                <input type="checkbox" name="fruits" id="orange" > Orange <br>
+                <input type="checkbox" name="fruits" id="mango" disabled> Mango <br>
+                <input type="checkbox" name="fruits" id="grape"> Grape <br>
+
+                <label for="country"><b>Select the Country</b></label>
+                <select name="country" id="country" required>
+                    <option value="">Select Country</option>
+                    <option value="IN" selected>India</option>
+                    <option value="US">united states</option>
+                    <option value="UK">Engkand</option>
+                </select>
+                <br>
+                <label for="FeedBack">Enter your Feedback</label>
+                <textarea name="FeedBack" id="FeedBack" placeholder="Feedback" required> I love it </textarea>
+                <br> <br>
+                <button name="submit">Submit</button> <input type="reset">
+
+            </fieldset>
+        </form>
+    </div>
+
+    <div>
+        <h4>Create an HTML page, which should contain all types of input elements</h4>
+        <input type="text"> <br><br>
+        <input type="number"> <br><br>
+        <input type="password"> <br><br>
+        <input type="checkbox"> <br><br>
+        <input type="radio"> <br><br>
+        <input type="date"> <br><br>
+        <input type="datetime-local"> <br><br>
+        <input type="time"> <br><br>
+        <input type="week"> <br><br>
+        <input type="range"> <br><br>
+        <input type="submit"> <br><br>
+        <input type="reset"> <br><br>
+        <input type="email"> <br><br>
+        <input type="file"> <br><br>
+        <input type="url"> <br><br>
+        <input type="search"> <br><br>
+        <input type="color"> <br><br>
+    </div>
+
+
+</body>
+</html>

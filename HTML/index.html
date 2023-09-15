@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen's Webpage</title>
+    <link rel="icon" href="Pickachu.jpg" type="image/x-icon">
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 50px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 7px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#heading-tags">Heading Tags</a></li>
+            <li><a href="#ul">Unordered List</a></li>
+            <li><a href="#ol">Ordered List</a></li>
+            <li><a href="#dl">Description List</a></li>
+            <li><a href="#div&Others">Div and Others</a></li>
+            <li><a href="#inline">inline Elements and Block Elements</a></li>
+            <li><a href="#sematic">Sematic tags</a></li>
+            <li><a href="#form">Form Elements</a></li>
+            <li><a href="#table">Table Elements</a></li>
+            <li><a href="#linkAndImages">Link and Images</a></li>
+            <li><a href="#figure">Figure Elements</a></li>
+            <li><a href="#input">Input Elements</a></li>
+            <li><a href="#datalist">Data List Elements</a></li>
+            <li><a href="#select">Select Elements</a></li>
+        </ul>
+    </nav>
+    <section id="heading-tags">
+        <!--Headings-->
+        <h1>First heading</h1>
+        <h2>Second heading</h2>
+        <h3>thrird heading</h3>
+        <h4>fourth heading</h4>
+        <h5>fifth heading</h5>
+        <h6>sixth heading</h6>
+        <!-- <hr/> self closing tags -->
+        <hr>
+    </section>
+
+    <!-- list tags -->
+    <section id="ul">
+        <!-- Unordered list -->
+        <h3>Unordered List</h3>
+        <ul>
+        <li>Apple</li>
+        <li>mango</li>
+        <li>pinapple</li>
+    </ul>
+    <hr>
+    </section>
+    <section id="ol">
+        <!-- Ordered list -->
+        <h3>Ordered List</h3>
+        <ol type="A">
+        <li>Apple</li>
+        <li>mango</li>
+        <li>pinapple</li>
+    </ol>
+    <hr>
+    </section>
+    <section id="dl">
+        <!-- Description List -->
+        <h3>Description List List</h3>
+        <dl>
+            <dt>Description term</dt>
+            <dd>It is a details in the description term</dd>
+            <dt>Decription term - 2</dt>
+            <dd>It is a second description term</dd>
+        </dl>
+        <hr>
+    </section>  
+    <section id="div&Others">
+        <!-- Div Tages -->
+        <h3>Div Tags</h3>
+        <div>I am a divisional tags</div>
+        <div>
+            <h4>Block Level Elements</h4>
+            <p>Lorem ipsum dolor sit <span><b>Hey I am a span</b></span> amet consectetur, adipisicing elit. 
+            Iure sit suscipit ad sunt eligendi alias, ex quos maiores consequatur 
+            ea, autem neque minima 
+            Voluptatem qui aliquam doloribus rem nesciunt culpa quae facere eius? 
+            Distinctio sunt, dolores, nihil cum iusto officiis quos aliquid veniam, 
+            nulla ipsa reprehenderit quas <mark> rem cupiditate ut eos maiores accusantium. </mark>
+            Expedita, <i> quibusdam pariatur? Obcaecati eius vero perferendis soluta, 
+            quae accusamus. Quas libero voluptates voluptas minima enim</i> Odio quod cumque 
+            accusantium, tenetur debitis obcaecati?
+            <em>temporibus molestias illum adipisci aspernatur <strong>necessitatibus sed?</strong> </em></p>
+            <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; inventore cum quo ut cumque impedit itaque.</span>
+            <br>
+            <!-- entities -->
+            <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;&lt;&lt;&lt;&lt; &copy; Praveen &gt;&gt;&gt;&gt;&gt;</span>
+            <address>for emphasising words</address>
+            <em>also for emphasising words</em> 
+            <br>
+            <i>for italic words</i>
+        </div>
+        <hr>
+    </section>
+    <section id="inline">
+        <!-- Inline Elements -->
+        <h3>Inline Elements</h3>
+        <span>I am a inline Elements,</span>
+        <span>I take no extra space</span>
+        <span>
+            <mark>this will be colored</mark>
+            <i>this will be itallic</i>
+            <b>this will be bold</b>
+        </span>
+        <br>
+        <span> the <b>br/ element</b> breaks the line so now I am below now </span>
+        <hr>
+    </section>
+    <section id="sematic">
+        <!-- Sematic tags -->
+        <h3>Sematic Tags</h3>
+        <div>Header Content</div>
+        <header>Header Content</header>
+        <nav>Navigation Bar</nav>
+        <section>
+            <h5>Section Example</h5>
+            <div>
+                Section
+            </div> 
+        </section>
+        <article>
+            <h5>Article Example</h5>
+            <div>
+                Article
+            </div>
+        </article>
+        <aside>Aside </aside>
+        <footer>Footer - Contact us page</footer>
+        <hr>
+    </section>    
+    <section id="form">
+        <!-- Form -->
+        <h3>Form</h3>      
+        <fieldset>
+            <legend><h3>Name for Field Set</h3></legend>
+            
+            <form>
+
+                <!-- input is a self closing tag -->
+                <label for="first-name">First Name</label>
+                <input type="text" placeholder="Enter First Name" id="first-name" name="first-name">
+                <br>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" placeholder="Enter Last Name" id="last-name" name="last-name">
+                <br>
+
+                <label for="email">Email</label>
+                <input type="email" required placeholder="Enter Email" id="email" name="email">
+                <br>
+                <label for="url">URL</label>
+                <input type="url" placeholder="Enter URL" id="url" name="url"> <br> <br>
+                <br>
+                <button name="submit">submit</button>
+
+            </form>        
+        </fieldset>
+        <hr>
+    </section>
+    <section id="table">
+        <h3>Table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>SI.No</th>
+                    <th>Name</th>
+                    <th>Affiliation</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Praveen</td>
+                    <td>Salem</td>
+                    <td>26</td>
+                </tr>
+                <!-- colspan -->
+                <tr>
+                    <td>2</td>
+                    <td>selvi</td>
+                    <td colspan="2">Nil</td>
+                </tr>
+                <!-- rowspan -->
+                <tr>
+                    <td>3</td>
+                    <td>Arun</td>
+                    <td rowspan="2">Nil</td>        
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>kannan</td>
+                    <td>27</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+    </section>
+    <section id="linkAndImages">
+        <h3>Links and images</h3>
+        <h4>Links also called as Anchor</h4>
+            <h3>Link opens in same page</h3>
+            <a href="https://www.google.com/"> Google</a>
+            <h3>link opens in separate page</h3>
+            <a href="https://www.google.com/" target="_blank">Google</a>
+        
+        <h4>images</h4>
+            <h3>Image from internet</h3>
+            <img src="https://i.pinimg.com/originals/16/63/df/1663dfe649980212d09f417d06e39cc9.png"
+            alt="Minions"
+            width="300">
+    
+            <h3>Images from local computer same directory</h3>
+            <img src="Pickachu.jpg" alt="Pikachu" width="200">
+    
+            <h3>Image from local computer different directory but not so diffrent</h3>
+            <img src="./excersise/Panda.png" alt="Panda" width="200" loading="lazy">
+        <hr>
+    </section>
+    <section id="figure">
+        <h3>Figure Elements</h3>
+        <figure>
+            <img src="https://i.pinimg.com/originals/64/54/45/645445b5e8d68fc2701da573fc692357.png" alt="Dog" loading="lazy" width="200" height="200">
+            <figcaption>Images is inside the Figure Element</figcaption>
+        </figure>
+        <figure>
+            <figcaption>Figure Element can also be used for other elements</figcaption>
+            <code>&lt;h1&gt; Hello World! &lt;/h1&gt;</code>
+        </figure>
+        <hr>
+    </section>
+    <section id="input">
+        <h3>Input Fields</h3>
+        <input type="text"> <span>text input</span> <br> <br>
+        <input type="number"> <span>number input</span>  <br> <br>
+        <input type="color">  <span>color input</span> <br> <br>
+        <input type="password">  <span>password input</span> <br> <br>
+        <input type="date">  <span>date input</span> <br> <br>
+        <input type="datetime-local">  <span>dateTime-local input</span> <br> <br>
+        <input type="time">  <span>time input</span> <br> <br>
+        <input type="week"> <span>Week input</span> <br> <br>
+        <input type="range"> <span>Range input</span> <br> <br>
+        <input type="reset"> <span>Reset input</span><br> <br>
+        <input type="file"> <span>File input</span><br> <br>
+        <input type="search"> <span>Search input</span><br> <br>
+        <input type="submit" value="send"> <br><br> <span><b>changed the input submit to send using value atrribute,For the submit in the above form element button submit is used.</b></span> <br><br>
+    
+        <span><b>CheckBoxs input</b></span> <br><br>
+        <input type="checkbox"> Apple <br> <br>
+        <input type="checkbox" checked> Orange<br> <br>
+        <input type="checkbox"> Banana<br> <br>
+    
+        <span><b>Radio input</b></span> <br><br>
+        <input type="radio" name="gender"> Male<br> <br>
+        <input type="radio" name="gender"> Female<br> <br>
+        <input type="radio" name="gender"> Others <br> <br>
+    
+        <input type="url" placeholder="Enter URL"> <span>URL input</span><br> <br>
+        <input type="email" placeholder="Enter Email"> <span>Email input</span><br> <br>
+        <hr>
+    </section>
+    <section id="datalist">
+        <h3>Data List Elements</h3>
+        <input type="text" placeholder="Enter text from list" list="fruits"> <span>Text input with list</span>
+        <datalist id="fruits">
+            <option >Apple</option>
+            <option >Orange</option>
+            <option >Banana</option>
+            <option >Grape</option>            
+        </datalist> 
+        <br><br>
+        <input type="submit"> <span>Submit input</span><br> <br>
+        <hr>
+    </section>
+    <section id="select">
+        <h3>Select</h3>
+        <label>Fruit Option</label>
+        <select>
+            <option>Select from list</option>
+            <option disabled>Apple</option>
+            <option>Orange</option>
+            <option selected>Banana</option>
+            <option>Grape</option>
+    </select>
+
+        <br><br>
+        <textarea placeholder="FeedBack Please"> </textarea>
+        <br> <br>
+        <hr>
+    </section>
+
+    <abbr title="Mozilla Developer NetWork"><a href="https://developer.mozilla.org" target="_blank">MDN</a></abbr>
+    <br><br>
+    <a href="eg_page.html" target="_blank"><b>Example Page Click to See</b></a> <span>It will redirect pages that we created</span>
+
+    <hr>
+    <p><a href="#">Back to Top</a></p>
+    <hr>
+    <footer>
+        <p>This is a practice page</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Accusantium nobis obcaecati necessitatibus id aut impedit ratione unde aliquid, eaque <br> nesciunt quod commodi tenetur exercitationem voluptas dicta dolor doloribus tempora sit?</p>
+    </footer>
+    <!-- br*15 -->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
+
+
+
+
