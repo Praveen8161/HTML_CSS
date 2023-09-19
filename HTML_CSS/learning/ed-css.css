@@ -1,0 +1,28 @@
+.out-box{
+    width: 250px;
+    height:250px;
+    background-color: red;
+}
+.inner-box{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    padding: 5px;
+    border: 5px solid black;
+    margin: 10px;
+}
+a{
+    color: blue;
+    text-decoration: none;
+}
+a:active,a:focus{
+    background-color: aqua;
+    color: violet;
+}
+a:hover{
+    background-color: blanchedalmond;
+    color: whitesmoke;
+}
+a:visited{
+    color: rgba(21, 21, 172, 0.671);
+}

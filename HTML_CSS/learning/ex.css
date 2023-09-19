@@ -1,0 +1,90 @@
+/* For list and border and text */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+body{
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+#others{
+    border: 10px double red;
+    font-size: 2rem;
+    padding: 2em;
+    margin: 1.5em 2em 2.5em 3em;
+    outline: 10px solid blue;
+    outline-offset: -20px;    
+}
+
+.circle{
+    border: 10px solid blue;
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    outline: 5px solid black;
+    outline-offset: 10px;
+    border-radius: 50%;
+    background-color: yellow;
+    text-align:justify;
+}
+p{
+    /* text-decoration:red double underline; */
+    text-transform: uppercase;
+    text-align: justify;
+    text-indent: 5em;
+    line-height: 1.5;
+    letter-spacing: 0.2em;
+    word-spacing: 0.9em;
+    font-weight: bold;
+    font-style:oblique;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+a{
+    color: red;
+    text-decoration: none;
+    cursor:pointer;
+}
+/* Psudo-Class */
+a:visited{
+    color: blue;
+}
+a:hover,a:focus{
+    color: green;
+    background-color: cadetblue;
+}
+a:active{
+    color: yellow;
+}
+
+ol{
+    list-style-type: lower-alpha;
+    text-align: center;
+    list-style-position: inside;
+    list-style-type: square;
+}
+ul{
+    list-style-type: circle;
+    text-align: center;
+    list-style-position: inside;
+    color: blue;
+    /* list-style: circle url(./images/img1.png) inside; */
+}
+ul li:nth-child(3){
+    color: pink;
+}
+
+/* or use last child   and can select all the childs inside even if it is nested */
+ol li:nth-child(2){
+    color: rgb(209, 3, 236);
+}
+
+ul li::marker{
+    color: red;
+    font-size: 1.1em;
+    content: "Click Here >>";
+}
+
+/* can only select Direct childs inside  */
+ul>li:nth-child(even){
+    color: chartreuse;
+}

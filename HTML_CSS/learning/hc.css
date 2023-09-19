@@ -1,29 +1,39 @@
+
+/* starting and REM and EM and class and ID's and Margin and Padding */
+
+/* Universal Selector  for RESET Concept*/ 
+/* *{
+    border: 5px;
+} */
+
 /* div{
     color: blueviolet;
 } */
+
+/* Four Pillers of Property */
 /* list property */
-ul{
+/* ul{
     list-style-type: none;
-}
+} */
 /* Font Property */
-p{
+/* p{
     font-size: 12px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 60;
-}
+} */
 /* Text Property */
-p{
+/* p{
     text-align: center;
     text-transform: uppercase;
     text-decoration: underline;
     line-height: 5;
     letter-spacing: 4px;
-}
+} */
 /* border property */
-p{
+/* p{
     /* border: border-width,border-style,border=color */
-    border: 10px solid red;
-}
+    /* border: 10px solid red;
+} */
 
 /* div{
     border-top: 5px solid green;
@@ -118,4 +128,28 @@ class and id can be in same element  */
 
 .one{
     color: red !important;
+}
+
+.rgb{
+    color: rgba(16, 211, 68,0.5);
+    background-color: beige;
+}
+
+/* rgba for Transparency ( 0 to 1 ) */
+#hsl{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: hsl(260, 65%, 39%);
+    /* rem = Root element  , We can also use em */
+    font-size: 2rem; 
+
+}
+
+#others{
+    box-sizing: border-box;
+    border: 5px;
+    border-style: double;
+    font-size: 1.3rem;
+    padding: 2em;
+    width: 50%;    
 }
