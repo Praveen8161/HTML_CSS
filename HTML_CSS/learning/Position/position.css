@@ -1,0 +1,69 @@
+/* Position and Parent-Child Inherients and Gradients */
+/* Scrool Behaviour */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#main-box{
+    bottom: 2px solid black;
+    width: 500px;
+    height: 900px;
+    margin: 0 auto;
+    background-color: aqua;
+    padding: 10px;
+    /* Horizontal Gradintens
+    to right,to left,to top,to bottom */
+    background: linear-gradient(to right, yellow,red);
+}
+
+.box{
+    border: 3px solid red;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+.absolute{
+    background-color: coral;
+    position: absolute;
+    left: 25px;
+    z-index: 1;
+}
+
+.relative{
+    background-color: green;
+    position: relative;
+    left: 25px;
+}
+
+.fixed{
+    background-color: cornflowerblue;
+    position: fixed;
+    top: 250px;
+    left: 25px;
+}
+
+.sticky{
+    background-color: mediumblue;
+    position: sticky;
+    top: 0;
+}
+
+.gradient{
+    background: radial-gradient(circle,blue,green);
+}
+
+.parent{
+    font-size: 24px;
+    margin: 25px;
+    border: 3px solid black;
+}
+.child{
+    border: inherit;
+    margin: inherit;
+}

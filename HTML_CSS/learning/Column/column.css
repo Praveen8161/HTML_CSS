@@ -1,0 +1,36 @@
+body{
+    font-size: 1.5rem;
+}
+.column{
+    /* when width given it don't give priority to count */ 
+    /* column-count: 4;
+    column-width: 200px; */
+
+    columns: 4 150px;
+    column-rule: 3px solid black;
+    column-gap: 3rem;
+}
+
+.column p{
+    margin-top: 0;
+}
+
+.column h2{
+    background-color: black;
+    color: whitesmoke;
+    margin: 0;
+    padding: 3rem;
+    break-inside: avoid;
+}
+
+.column .quote{
+    color: #333;
+    font-size: 3rem;
+    text-align: center;
+    column-span: all;
+    margin: 1rem;    
+}
+
+.no-wrap{
+    white-space:nowrap;
+}

@@ -58,11 +58,12 @@ body{
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    /* width: 100px;
-    height: 500px; */
+    width: 700px;
+    height: 500px;
+    background-color: red;
     flex-wrap: wrap;
     gap: 0.5rem;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 .flex-nav-bar li{
@@ -73,4 +74,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* only applies to the Direct li element under ul not nested */
+ul > li{
+    font-weight: 600;
+}
+
+/* Apply this style to all li except the given class */
+li:not(.not-style){
+    color:green;
 }

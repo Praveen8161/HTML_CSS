@@ -1,0 +1,35 @@
+body{
+    font-size: 1.5rem;
+}
+
+section{
+    border: 3px solid black;
+    background-color: darkgoldenrod;
+    padding: 8px;
+    /* overflow not a recent technique so use Flow-root from display*/
+    /* overflow: auto; */
+    display: flow-root;
+}
+
+.block{
+    width: 30vw;
+    background-color: cadetblue;
+    color: whitesmoke;
+    height: 30vw;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.left{
+    float: left;
+    margin-right: 20px;
+}
+
+.right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
