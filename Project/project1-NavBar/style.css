@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    background:linear-gradient(to right,rgb(188, 78, 78),rgb(81, 212, 81));
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+#check, .check{
+    display: none;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.nav-list a:hover{
+    background-color: rgb(79, 79, 152);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color: whitesmoke;
+}
+
+.nav-list li a{
+    color: rgb(48, 32, 32);
+}
+
+main{
+    min-width: 50vw;
+    min-height: 50vh;
+    background: url(../images/mountains.jpg),linear-gradient(to left,black,green);
+    background-size: cover;
+    background-position: bottom;
+}
+
+@media screen and (max-width:700px) {
+    .nav-bar{
+        font-size: 1rem;
+    }
+    #check{
+        display: block;
+        position: absolute;
+        top: 10px;
+        opacity: 0;
+        background-color: green;
+    }
+
+    .check{
+        display: block;
+    }
+    .nav-list{
+        position: fixed;
+        right: -500px;
+        top: 40px;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+        min-height: 50%;
+        min-width: 25%;
+        padding: 1rem;
+        background:linear-gradient(to top,rgb(99, 170, 99),rgb(83, 214, 83));
+        flex-direction: column;
+        text-shadow: 2px 2px 5px  green;
+    }
+
+    #check:checked ~ .nav-list{
+        right: 0;
+    }
+}
+

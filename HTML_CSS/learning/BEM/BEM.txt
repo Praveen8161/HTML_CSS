@@ -1,0 +1,16 @@
+
+
+BEM = BLOCK, ELEMENT, MODIFIER
+
+https://css-tricks.com/bem-101/
+
+OTHER BEST PRACTICS
+
+1. Make sure to Follow Organisation Naming CONvention
+
+2. Comment to explain and separate your code as a Differnt chapters
+
+3. filter and delete duplicate code by VS Code Sorting
+    [ VS Code search bar => enter (>sort) => select Ascending or Desecding ]
+
+4. BEM

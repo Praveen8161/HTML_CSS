@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* root is used to declare variable 
+defining variable in CAPITAL is a good practice */
+
+:root{
+    --BGCOLOR: rgba(51, 171, 71, 0.622);
+}
+
+body{
+    background-color: var(--BGCOLOR);
+}
+
+/* variable override */
+
+/* enter the class name and change it */
+
+.class{
+    --BGCOLOR: rgba(83, 19, 193, 0.622);
+}
+
+
+@media (prefers-color-scheme:dark){
+    *{
+        background-color: bisque;
+    }
+}
+
+div a:hover{
+    filter: brightness(150%);
+}
+
+.tooltip{
+    border-bottom:3px solid red ;
+}
+
+.tooltip:hover::before{
+    content:attr(data--tooltip);
+}

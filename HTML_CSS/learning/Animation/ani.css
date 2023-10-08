@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    background-color: red;
+    width: 100%;
+    max-width: 300px;
+    height: 30vh;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    text-shadow: 6px 4px 5px black;
+}
+
+.animate{
+    animation-name: slide;
+    animation-delay: 1s;
+    animation-duration: 7s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes slide{
+    0% {
+        transform: translate(0deg);
+        background-color: blueviolet;
+        text-shadow: 6px 4px 5px rgb(235, 223, 223);
+    }
+
+    20% {
+        transform: translate(-300px,25px) rotate(90deg);
+        background-color: darkblue;
+    }
+
+    60% {
+        transform: scale(150%,250%) translate(0deg);
+        background-color: yellow;
+    }
+
+    100% {
+        transform: translate(0deg);
+        background-color: rgb(2, 85, 2);
+        text-shadow: 6px 4px 5px rgb(235, 223, 223);
+    }
+}

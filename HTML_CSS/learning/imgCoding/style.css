@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+   min-height: 100vh;
+   background-color: aliceblue;
+   background-image: url(../images/flourish.webp), linear-gradient(to right,rgb(54, 54, 192),rgb(169, 59, 59),rgb(225, 225, 14),rgb(54, 54, 192));
+   /* background-repeat: it applies to url , and this applies to linear gradient which is given second; */
+   background-position: right;
+   background-size: 20% auto;
+}
+/* section{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1%;
+    padding-top: 1%;
+    border: 1px solid black;
+    background-color: aquamarine;
+}
+
+section img{
+    width: 25%;
+    height: auto;
+} */
+
+section{
+    background: url(../images/Panda.png);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+.vinayagar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    background-color: hsla(0, 0%, 0%, 0.245);
+    border-radius: 10px;
+}
+
+.vinayagar h1{
+    align-self: center;
+    color: aliceblue;
+    text-shadow: 2px 5px 5px black;
+}
+
+figcaption{
+    position: absolute;
+    left: -500px;
+}
+
+.vinayagar img{
+    width: 25%;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+
+.clip{
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+    background-image: url(../images/ufo-mountain.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 5px 5px 8px rgb(57, 57, 197);
+}

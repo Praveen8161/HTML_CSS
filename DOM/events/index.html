@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JS DOM Events</h1>
+    <div class="btn-list">
+        <button 
+        class="btn res" 
+        onclick="alertMsg(`Hello there`)">
+        Alert</button>
+        <button 
+        class="btn res" 
+        onclick="promptMsg()">
+        Prompt</button>
+        <button 
+        class="btn res" 
+        onclick="confirm()">
+        Confirm</button>
+    </div>
+
+    <div class="result">
+        <p>result</p>
+    </div>
+
+    <div id="time">
+        <span></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

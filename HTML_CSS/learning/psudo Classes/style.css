@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav :is(a:active a:focus){
+    color: red;
+}
+
+nav a:any-link{
+    color: green;
+}
+
+
+/* The specificity of where is 0 */
+:where(header,footer){
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+}
+
+.nav-bar:target{
+    background-color: black;
+    color: whitesmoke;
+    border: 2px solid saddlebrown;
+}
+
+.nav-bar img[alt]{
+    border: 5px solid brown;
+}
+
+.nav-bar img:not([alt]){
+    border: 5px solid green;
+}
+
+.nav-bar:nth-child(even){
+    color: blueviolet;
+}
