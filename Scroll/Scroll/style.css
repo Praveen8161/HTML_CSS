@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* "proximity" goes to nearby page "mandatory" goes to next page */
+    scroll-snap-type: both mandatory;
+    /* Give space at top before page */
+    scroll-padding-top: 30px;
+}
+
+.nav{
+    max-width: 800px;
+    margin-inline: auto;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div{
+    width: 300px;
+    margin-inline: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: aqua;
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* where to stop the scroll in page */
+    scroll-snap-align: start;
+    /* I we do big scroll "Always" stops at next and "normal" is default */
+    scroll-snap-stop: always;
+}

@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.card{
+    background-color: rgb(235, 2, 2);
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 150ms;
+}
+
+.card.show{
+    transform: translateX(0);
+    opacity: 1;
+}
