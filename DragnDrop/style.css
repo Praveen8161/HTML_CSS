@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100lvh;
+}
+
+.dropArea {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 500px;
+  min-height: 300px;
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.image {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.imgView {
+  border: 1px dashed blue;
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 5px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
